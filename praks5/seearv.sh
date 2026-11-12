@@ -1,0 +1,15 @@
+#!/bin/bash
+
+## skript kontrollib kas arv on paaris või paaritu
+echo -n "sisesta arvud, mida on vaja kontrollida: "
+read arv
+jaak=$(( $arv %2 ))
+
+if [ $arv -eq 0 ]
+then 
+
+	echo "see $srv on paaris"
+else 
+	echo "see $arv on paaritu"
+
+fi
