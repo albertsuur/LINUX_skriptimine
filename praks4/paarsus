@@ -1,0 +1,20 @@
+#!/bin/bash
+
+## Skript kontrollib, kas sisestatud arv on paaris või paaritu.
+
+if [ "$#" -ne 1 ]
+then
+    echo "Palun käivita skript ühe täisarvuga. Näiteks: ./paarsus 3"
+    exit 1
+fi
+
+arv=$1
+jaak=$((arv % 2))
+
+if [ "$jaak" -eq 0 ]
+then
+    echo "See $arv on paaris"
+else
+    echo "See $arv on paaritu"
+fi
+
